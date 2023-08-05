@@ -166,7 +166,7 @@ button:hover {
 }
 
 .hero-bottom-2 img:hover {
-    width: 400px;
+    transform: scale(1.05) rotate(4deg);
 }
 
 .quote-container {
@@ -201,8 +201,7 @@ button:hover {
 }
 
 .articleBox:hover {
-    width: 180px;
-    height: 180px;
+    transform: scale(1.05) rotate(4deg);
 }
 
 .call-to-action {
