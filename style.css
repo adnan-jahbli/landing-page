@@ -19,6 +19,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #1f2937;
+    position: relative;
     flex-grow: 1;
 }
 
@@ -32,9 +33,9 @@ ul {
     list-style: none;
 }
 
-a {
+.header-list a {
     text-decoration: none;
-    color: black;
+    font-weight: bold;
 }
 
 .header-list {
@@ -71,6 +72,7 @@ a,
 .hero-bottom-2 img {
     width: 350px;
     border-radius: 6%;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.2);
 }
 
 .hero-bottom-1 {
@@ -79,16 +81,124 @@ a,
     align-items: flex-start;
     gap: 10px;
     width: 500px;
+    z-index: 1;
 }
 
 button {
-    padding: 6px 16px;
+    padding: 6px 24px;
     background-color: #3882F6;
+    border-radius: 8px;
     cursor: pointer;
-    color: white;
+    color: #E5E7EB;
+    font-size: 16px;
 }
 
 .footer {
-    background-color: green;
-    color: white;
+    display: flex;
+    justify-content: center;
+    background-color: #1f2937;
+    color: #E5E7EB;
+    font-size: 16px;
+    padding: 20px;
+}
+
+.hero-bottom-2 {
+    z-index: 1
+}
+
+.illustration1 {
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    z-index: 0;
+    opacity: 0.2;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    flex: 1 0 auto;
+    z-index: 0;
+    background-color: white;
+}
+
+.info h1 {
+    font-size: 36px;
+    color: #1f2937;
+    text-align: center;
+    padding: 48px;
+}
+
+.articleBox {
+    width: 150px;
+    height: 150px;
+    border: 10px solid #3882F6;
+    border-radius: 10%;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+
+.articleText {
+    width: 200px;
+    text-align: center;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 56px;
+    flex: 1 0 auto;
+}
+
+.header-list a:hover {
+    color: #3882F6;
+}
+
+button:hover {
+    background-color: #E5E7EB;
+    color: #3882F6;
+    font-weight: bold;
+}
+
+.hero-bottom-2 img:hover {
+    width: 400px;
+}
+
+.quote-container {
+    display: flex;
+    background-color: #E5E7EB;
+    justify-content: center;
+}
+
+.quote-box {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    gap: 10px;
+    flex-shrink: 1;
+    padding: 160px 80px;
+}
+
+.quote-source {
+    align-self: flex-end;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.quote,
+.quote-source {
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quote {
+    font-size: 36px;
+}
+
+.articleBox:hover {
+    width: 180px;
+    height: 180px;
 }
